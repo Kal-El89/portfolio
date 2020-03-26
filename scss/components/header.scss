@@ -1,0 +1,93 @@
+.header{
+    background-color: #1F1F1F;
+    height: 500px;
+    .header-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav-li {
+            display: inline-block; /* ჰორიზონტალურად დავსვით მენიუ */
+            .nav-a{
+                text-decoration: none; /* ბმულები წავუშალეთ */
+                color: #332E2E; 
+                text-transform: uppercase;
+                padding: 0 30px;
+              }
+          }
+          
+    } 
+
+}
+.active .menu-nav {
+    transform: scaleX(1) translateX(0%);
+    opacity: 1;
+    visibility: visible;
+ }
+  .menu-nav {
+    transition: 0.2s;
+    transform: scaleX(0) translateX(0%); /* ჰორიზონტალური ტრანფორმაცია */
+    transform-origin: right; /* მარჯვნიდან რომ ხდებოდეს მენიუს ტრანსფორმაცია, ანუ ბირგერიდან */
+     opacity: 0; /* უჩინარი ელემენტი */
+     visibility: hidden; /* დავმალეთ ბურგერში მენიუ */
+    line-height: 51px;
+     background-color: #FFFFFF;
+     padding-right: 27px;
+     margin-right: -40px;
+     border-top-left-radius: 50px; /* ბურგერისნაირი ბორდერები გავუკეთეთ */
+     border-bottom-left-radius: 50px;
+   }
+
+
+
+  .menu {
+    display: flex; /* ჰორიზონტალურად დალაგება */
+    justify-content: center;/* კონტენტის ცენტრალიზება */
+    align-items: center; /* კონტენტის ზუსტად ცენტრში ჩასმა */
+  }
+
+  .burger-menu {
+    background-color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: block; /* კონტენტის გამოსაჩენად */
+    /* z-index: 4; */
+    position: relative; /* საჭიროა იმისთვის რომ კონტენტი არ გადავიდეს მშობლის გარეთ */
+    cursor: pointer;
+    margin-left: 15px;
+    .burger-menu-span,
+    .burger-menu-span::before, /* ფსევდოკლასები */
+    .burger-menu-span::after{
+        position: absolute; /* მშობლის შიგნით რომ ვამოძრაოთ შვილი */
+        top: 50%; /* ბურგერში ცენტრში ჩასმა კონტენტის */
+        left: 50%; /* მარცხვნის გაწევა */
+        margin-left: -15px; /* 30ის ნახევარს ვწერთ ცენტრში რომ გადავიტანოთ */
+        width: 30px;
+        height: 2px;
+        background-color: #332E2E;
+        margin-top: -1px; /* ხაზს ცოტათი ვამოძრავებთ, ზუსტად რომ დაჯდეს ცენტრში სიგანით */
+        }
+        .burger-menu-span::before,
+        .burger-menu-span::after{
+          content: ""; /* ფსევდოკონტენტი რომ გამოჩნდეს */
+          transition: 0.2s; /* ანიმაციის სისწრაფე */
+        }
+        .burger-menu-span::before{
+          transform: translateY(-7px); /* ვამოჭრავებთ ვერტიკალურად y ის გამო */
+        }
+        .burger-menu-span::after{
+          transform: translateY(7px);
+        }
+           
+  }
+
+  .active .burger-menu-span::before{
+    transform: rotate(-35deg);
+    transform-origin: left bottom; /* ანიმაციის წერტილს ვუთითებთ, მარცხვნივ დაბლა*/
+    width: 10px;
+}
+.active .burger-menu-span::after{
+    transform: rotate(35deg);
+    transform-origin: left top; /* ანიმაციის წერტილს ვუთითებთ, მარცხვნივ მაღლა*/
+    width: 10px;
+}
