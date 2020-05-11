@@ -6,24 +6,28 @@
     <meta htt-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/1635090fa3.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="js/main.js"></script>
     <title>Giorgi Tuphuria</title>
 </head>
 <body class="body">
     <header class="header">
         <div class="header-wrapper container">
-            <div class="logo">
-                <a class="logo-wrapper" href="index.html">
-                    <img class="logo-img" src="img/svg/logo.png" alt="logo">
+            <div>
+                <a href="index.html">
+                    <img class="logo" src="img/svg/logo footer.png" alt="logo footer">
                 </a>
             </div>
             <div class="menu">
             <div class="nav-menu" id="men">
                 <nav class="menu-nav">
                   <ul class="nav-ul">
-                    <li class="nav-li"><a href="index.html" class="nav-a">main</a></li>
-                    <li class="nav-li"><a href="index.html" class="nav-a">portfolio</a></li>
-                    <li class="nav-li"><a href="index.html" class="nav-a">about</a></li>
-                    <li class="nav-li"><a href="index.html" class="nav-a">contact</a></li>
+                    <li class="nav-li"><a href="#developer" class="nav-a">main</a></li>
+                    <li class="nav-li"><a href="#portfolio" class="nav-a">portfolio</a></li>
+                    <li class="nav-li"><a href="#about" class="nav-a">about</a></li>
+                    <li class="nav-li"><a href="#contact" class="nav-a">contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -34,7 +38,7 @@
             </div>
         </div>
     </header>
-    <section class="developer">
+    <section class="developer scrollspy" id="developer">
       <div class="myphoto container">
       <img class="behind" src="img/svg/overlay bg.png" src="overlay bg">
       <img class="behind2" src="img/svg/overlay bg 2.png" src="overlay bg 2">
@@ -44,13 +48,13 @@
         <a class="fb" href="https://www.facebook.com/giorgituphuria" target="_blank"><i class="fab fa-facebook-square"></i></a>
         <a class="insta" href="https://www.instagram.com/pandaria89" target="_blank"><i class="fab fa-instagram"></i></a>
         <a class="cod"  href="https://codepen.io/kal-el89" target="_blank"><i class="fab fa-codepen"></i></a>
-        <a class="vk" href="https://vk.com/id153049534" target="_blank"><i class="fab fa-vk"></i></a>
+        <a class="vk" href="https://github.com/Kal-El89" target="_blank"><i class="fab fa-github"></i></a>
       </nav>
       </div>
       
 
     </section>
-    <section class="webLinks">
+    <section class="webLinks scrollspy" id="portfolio">
       <div class='container'>
         <h1 class="page_title">portfolio</h1>
         <div class="portfolio-wrapper">
@@ -77,7 +81,7 @@
          </div>
        </div>
     </section>
-    <section class="about_me_section">
+    <section class="about_me_section scrollspy" id="about">
       <div class="about container">
 
       <h1 class="page_title">about me</h1>
@@ -92,7 +96,7 @@
 
     </div>
     </section>
-    <section class="contact_to_me">
+    <section class="contact_to_me scrollspy" id="contact">
       <div class="contact container">
         
         <h1 class="page_title">contact</h1>
@@ -115,7 +119,7 @@
 
         
         <div class="map_block">
-          <iframe width="600" height="340" id="gmap_canvas" src="https://maps.google.com/maps?q=sulkhan%20tsintsadze%2012&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <iframe class="map-block" width="600" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=sulkhan%20tsintsadze%2012&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
       </div>
       </div>
       </div>
@@ -126,21 +130,14 @@
 
 
 <footer class="footer">
-  <img class="footer-theme" src="img/svg/bg 1.png" alt="bg 1">
-  <img class="footer-theme2" src="img/svg/bg 2.png" alt="bg 2">
-  <img class="logo-footer" src="img/svg/logo footer.png" alt="logo footer">
   <div class="footer-wrapper container">
-    <div class="description-footer">
     <p class="footer-text">© Copyright Giorgi Tupuria</p>
-    </div>
-    <div>
     <nav class="icons-footer">
       <a class="fb" href="https://www.facebook.com/giorgituphuria" target="_blank"><i class="fab fa-facebook-square"></i></a>
       <a class="insta" href="https://www.instagram.com/pandaria89" target="_blank"><i class="fab fa-instagram"></i></a>
       <a class="cod"  href="https://codepen.io/kal-el89" target="_blank"><i class="fab fa-codepen"></i></a>
-      <a class="vk" href="https://vk.com/id153049534" target="_blank"><i class="fab fa-vk"></i></a>
+      <a class="vk" href="https://github.com/Kal-El89" target="_blank"><i class="fab fa-github"></i></a>
     </nav>
-    </div>
   </div>
 </footer>
 <script src="js/script.js"></script>

@@ -9,10 +9,11 @@
      height: 90px;
      text-transform: uppercase;
      align-content: center;
+     font-family: '$Eurostile';
  }
 
 .developer {
-    height: 450px;
+    padding: 30px 0;
     background-color: #1F1F1F;
    
 .myphoto {
@@ -44,6 +45,7 @@
     margin-top: 30px;
     font-size: 70px;
     text-transform: uppercase;
+    font-family: '$Eurostile';
 }
 
 .icons {
@@ -79,64 +81,6 @@
         }
     }
 }
-.footer{
-    .footer-theme{
-position: absolute;
-height: 440px;
-width: 100%;
-    }
-    .footer-theme2{
-        position: absolute;
-        height: 390px;
-        margin-top: 50px;
-        width: 100%;
-    }
-    .logo-footer {
-        position: absolute;
-        height: 80px;
-        margin-top: 130px;
-        margin-left: 200px;
-    }
-    .footer-wrapper{
-        padding-top: 300px;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        .icons-footer{
-            font-size: 30px;
-            .fb{
-                padding-right: 20px;
-                color: #FFFFFF;
-                &:hover{
-                    color: #4267B2;
-                }
-            }
-            .insta{
-                padding-right: 20px;
-                color: #FFFFFF;
-                &:hover{
-                    color: #C13584;
-                }
-            }
-            .cod{
-                padding-right: 20px;
-                color: #FFFFFF;
-                &:hover{
-                    color: #fcd000;
-                }
-            }
-            .vk{
-                padding-right: 20px;
-                color: #FFFFFF;
-                &:hover{
-                    color: #4680C2;
-                }
-            }
-        }
-    }
-}
 
 // project section //
 
@@ -162,7 +106,7 @@ width: 100%;
   .card-1{
     height: 305px;
     width: 170px;
-    border-style: solid;
+    border: solid;
     border-color: #242020;
     background-color: #242020;
     border-radius: 2%;
@@ -180,6 +124,8 @@ width: 100%;
     text-transform: uppercase;
     text-align: center;
     color: #FFFFF0;
+    font-family: '$Eurostile';
+    line-height: 30px;
   }
   .status-yes{
     color: #0FEF0F;
@@ -189,12 +135,13 @@ width: 100%;
   }
   .card-description-1{
     text-align: left;
-    padding-left: 15px;
+    padding-left: 21px;
     padding-top: 10px;
     color: #FFFFF0;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 1.5;
+    font-family: '$Eurostile';
   }
   .card-1:hover{
     opacity: 0.5;
@@ -202,7 +149,7 @@ width: 100%;
 }
   // about me section //
 .about{
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     background-color: #1F1F1F;
 }
 .about_me_section{
@@ -234,7 +181,8 @@ width: 100%;
         text-indent: 30px;
         text-align: justify;
         line-height: 30px;
-        padding-top: 30px;
+        
+        font-family: '$Eurostile';
     }
     .academy{
         display: flex;
@@ -254,7 +202,7 @@ width: 100%;
         height: 250px;
         transition: 0.8s;
         cursor: pointer;
-        padding-top: 15px;
+        
         &:hover{
             transform: scale(1.6);
         }
@@ -264,7 +212,7 @@ width: 100%;
 
 // contact section //
 .contact{
-    padding-bottom: 90px;
+    padding-bottom: 60px;
 }
 .contact_to_me {
 
@@ -303,14 +251,20 @@ width: 100%;
 }
 .phone{
     display: flex;
+    align-items: center;
+    
 }
 .mail{
     display: flex;
     padding-top: 15px;
+    align-items: center;
+    
 }
 .location{
     display: flex;
     padding-top: 15px;
+    align-items: center;
+    
 
 }
 

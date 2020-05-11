@@ -1,0 +1,11 @@
+@font-face {
+    font-family: '$Eurostile';
+    src: url($fontsUrl + 'EurostileBold.eot');
+    src: url($fontsUrl + 'EurostileBold.eot?#iefix') format('embedded-opentype'),
+        url($fontsUrl + 'EurostileBold.woff2') format('woff2'),
+        url($fontsUrl + 'EurostileBold.woff') format('woff'),
+        url($fontsUrl + 'EurostileBold.ttf') format('truetype'),
+        url($fontsUrl + 'EurostileBold.svg#EurostileBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
