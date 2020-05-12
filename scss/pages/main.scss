@@ -97,23 +97,25 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    a{
+        box-shadow: 0px 0px 9px 1px rgba(48,24,48,1);
+        height: 305px;
+    width: 170px;
+    
+    background-color: #242020;
+    border-radius: 2%;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+    }
+    
   }
   .page_title{
      
     color: #242020;
    
 }
-  .card-1{
-    height: 305px;
-    width: 170px;
-    border: solid;
-    border-color: #242020;
-    background-color: #242020;
-    border-radius: 2%;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.2s;
-  }
+  
   .card-img-1{
     height: 200px;
     width: 100%;
@@ -153,8 +155,8 @@
     background-color: #1F1F1F;
 }
 .about_me_section{
-    
     background-color: #1F1F1F;
+    
     .page_title{
         
         color: #FFFFFF;
@@ -174,19 +176,16 @@
 
 .about_me{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
     .resume{
         width: 650px;
         font-size: 21px;
         text-indent: 30px;
         text-align: justify;
-        line-height: 30px;
-        
+        line-height: 30px;        
         font-family: '$Eurostile';
     }
-    .academy{
-        display: flex;
-    flex-direction: column;
     .company{
         color: #00c1ff;
         text-decoration: none;
@@ -195,20 +194,18 @@
         transition: 0.5s;
         &:hover{
             color: white;
-        }
-        
+        }    
     }
     .diploma{
-        height: 250px;
+        height: 200px;
         transition: 0.8s;
         cursor: pointer;
-        
         &:hover{
             transform: scale(1.6);
         }
     }
 }
-}
+
 
 // contact section //
 .contact{
@@ -231,7 +228,7 @@
     border-radius: 50%;
     background-color: rgb(224, 213, 213);
     color: #242020;
-    border: solid;
+    box-shadow: 0px 0px 9px 1px rgba(48,24,48,1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,6 +243,9 @@
     }
     p{
         padding-left: 15px;
+    }
+    .map_block{
+        box-shadow: 0px 0px 9px 1px rgba(48,24,48,1);
     }
     
 }
