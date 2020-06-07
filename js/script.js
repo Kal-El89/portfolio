@@ -6,3 +6,5 @@ burgerElement.classList.toggle("active");
 menuElement.classList.toggle("active");
 })
 
+// training //
+

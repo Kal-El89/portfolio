@@ -7,36 +7,5 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .icons-footer{
-            font-size: 30px;
-            .fb{
-                padding-right: 20px;
-                color: #FFFFFF;
-                &:hover{
-                    color: #4267B2;
-                }
-            }
-            .insta{
-                padding-right: 20px;
-                color: #FFFFFF;
-                &:hover{
-                    color: #C13584;
-                }
-            }
-            .cod{
-                padding-right: 20px;
-                color: #FFFFFF;
-                &:hover{
-                    color: #fcd000;
-                }
-            }
-            .vk{
-                
-                color: #FFFFFF;
-                &:hover{
-                    color: #4680C2;
-                }
-            }
-        }
     }
 }

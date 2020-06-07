@@ -6,10 +6,41 @@
 
 .logo{
     height: 50px;
-    color: #1f1f1f;
     
 }
 
 .body{
-    padding-top: 90px;
+    padding-top: 60px;
+}
+
+.fb{
+    padding-right: 20px;
+    color: $defaultWhiteColor;
+        &:hover{
+            color: $defaultFBColor;
+        }
+    }
+.insta{
+    padding-right: 20px;
+    color: $defaultWhiteColor;
+        &:hover{
+            color: $defaultInstaColor;
+        }
+    }
+.cod{
+    padding-right: 20px;
+    color: $defaultWhiteColor;
+        &:hover{
+            color: $defaultCodColor;
+        }
+    }
+.vk{
+    color: $defaultWhiteColor;
+        &:hover{
+            color: $defaultGitColor;
+        }
+    }
+
+.icons{
+    font-size: 30px;
 }

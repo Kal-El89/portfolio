@@ -1,9 +1,10 @@
 .body{
     margin: auto;
 }
+
  .page_title{
      font-size: 24px;
-     color: #FFFFFF;
+     color: $defaultWhiteColor;
      margin: 0;
      line-height: 90px;
      height: 90px;
@@ -13,75 +14,46 @@
  }
 
 .developer {
-    padding: 30px 0;
-    background-color: #1F1F1F;
+    
+    background-color: $defaultBlackColor;
+    padding: 30px 0px;
+    
    
 .myphoto {
+    display: flex;
+    justify-content: space-between;
     
     .behind {
-        width: 400px;
+        width: 310px;
         position: absolute; /* ერთმანეთზე მივამაგრე */
-        margin-top: 15px;
         
     }
     .behind2 {
-        width: 388px;
+        width: 300px;
         position: absolute;
         margin-top: 2px;
+        border-bottom-left-radius: 53%;
         
     }
     .photo {
         position: absolute;
-        width: 385px;
-        border-bottom-left-radius: 60%;
-        border-bottom-right-radius: 75%;
+        width: 300px;
     }
 }
 }
-.tagline{
-    position: absolute;
-    color: #FFFFFF;
-    margin-left: 300px;
-    margin-top: 30px;
-    font-size: 70px;
-    text-transform: uppercase;
-    font-family: '$Eurostile';
-}
-
-.icons {
-    padding-top: 350px;
-    padding-left: 950px;
-    font-size: 30px;
-    .fb{
-        padding-right: 20px;
-        color: #FFFFFF;
-        &:hover{
-            color: #4267B2;
+.my_slogan{
+    padding-right: 400px;
+    .tagline{
+        position: absolute;
+        color: $defaultWhiteColor;
+        font-size: 70px;
+        text-transform: uppercase;
+        font-family: '$Eurostile';
         }
     }
-    .insta{
-        padding-right: 20px;
-        color: #FFFFFF;
-        &:hover{
-            color: #C13584;
-        }
+.my_pages{
+    padding-top: 260px;
     }
-    .cod{
-        padding-right: 20px;
-        color: #FFFFFF;
-        &:hover{
-            color: #fcd000;
-        }
-    }
-    .vk{
-        padding-right: 20px;
-        color: #FFFFFF;
-        &:hover{
-            color: #4680C2;
-        }
-    }
-}
-
 // project section //
 
 .webLinks{
@@ -98,11 +70,11 @@
     justify-content: space-between; 
     align-items: center;
     a{
-        box-shadow: 0px 0px 9px 1px rgba(48,24,48,1);
+        box-shadow: $defaultShadowsColor;
         height: 305px;
     width: 170px;
     
-    background-color: #242020;
+    background-color: $defaultBrownColor;
     border-radius: 2%;
     text-decoration: none;
     cursor: pointer;
@@ -112,7 +84,7 @@
   }
   .page_title{
      
-    color: #242020;
+    color: $defaultBrownColor;
    
 }
   
@@ -152,25 +124,23 @@
   // about me section //
 .about{
     padding-bottom: 60px;
-    background-color: #1F1F1F;
+    background-color: $defaultBlackColor;
 }
 .about_me_section{
-    background-color: #1F1F1F;
+    background-color: $defaultBlackColor;
     
     .page_title{
         
-        color: #FFFFFF;
+        color: $defaultWhiteColor;
         
     }
-    .support_words{
-        color: #7C2222;
-    }
+    
     .my_name{
-        color: #FFFFFF;
+        color: $defaultWhiteColor;
 
     }
     .resume{
-        color: #FFFFFF;
+        color: $defaultWhiteColor;
     }
 }
 
@@ -186,16 +156,7 @@
         line-height: 30px;        
         font-family: '$Eurostile';
     }
-    .company{
-        color: #00c1ff;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 22px;
-        transition: 0.5s;
-        &:hover{
-            color: white;
-        }    
-    }
+    
     .diploma{
         height: 200px;
         transition: 0.8s;
@@ -215,7 +176,7 @@
 
     .page_title{
      
-        color: #242020;
+        color: $defaultBrownColor;
        
     }
     .contact_to_me_flex{
@@ -227,8 +188,8 @@
     width: 50px;
     border-radius: 50%;
     background-color: rgb(224, 213, 213);
-    color: #242020;
-    box-shadow: 0px 0px 9px 1px rgba(48,24,48,1);
+    color: $defaultBrownColor;
+    box-shadow: $defaultShadowsColor;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +198,7 @@
     transition: 0.2s;
     }
     i:hover{
-        background-color: #242020;
+        background-color: $defaultBrownColor;
         color: rgb(224, 213, 213);
 
     }
@@ -245,7 +206,7 @@
         padding-left: 15px;
     }
     .map_block{
-        box-shadow: 0px 0px 9px 1px rgba(48,24,48,1);
+        box-shadow: $defaultShadowsColor;
     }
     
 }
@@ -264,8 +225,6 @@
     display: flex;
     padding-top: 15px;
     align-items: center;
-    
-
 }
 
 
